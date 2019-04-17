@@ -14,6 +14,7 @@ const onThreadInserted = functions.firestore.document('threads/{threadId}')
       title: thread.title,
       link: thread.link,
       type: thread.type,
+      forumName: thread.forumName,
     })
   });
 

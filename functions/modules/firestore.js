@@ -17,6 +17,7 @@ const firestore = {
       title: thread.title,
       type: thread.type,
       link: thread.link,
+      forumName: thread.forumName,
     };
     return firestoreSvc
       .collection('threads')
