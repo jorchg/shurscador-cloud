@@ -16,6 +16,7 @@ const firestore = {
       lastSeen: thread.lastSeen,
       title: thread.title,
       type: thread.type,
+      link: thread.link,
     };
     return firestoreSvc
       .collection('threads')
