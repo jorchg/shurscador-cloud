@@ -10,6 +10,7 @@ const onThreadInserted = functions.firestore.document('threads/{threadId}')
     return algoliaIndex.addObject({
       objectID: thread.id,
       createdBy: thread.createdBy,
+      createdById: thread.createdById,
       forumId: thread.forumId,
       title: thread.title,
       link: thread.link,

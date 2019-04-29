@@ -21,6 +21,6 @@ module.exports = (app) => {
         return Promise.all(addFunctions);
       })
       .then(result => res.sendStatus(200))
-      .catch(e => res.status(500).send(e));
+      .catch(e => res.status(500).send(e.message));
   });
 }

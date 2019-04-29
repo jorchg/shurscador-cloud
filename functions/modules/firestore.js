@@ -11,6 +11,7 @@ const firestore = {
   addThread: (thread = {}) => {
     const doc = {
       createdBy: thread.createdBy,
+      createdById: thread.createdById,
       forumId: thread.forumId,
       id: thread.id,
       lastSeen: thread.lastSeen,
