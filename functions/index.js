@@ -15,6 +15,9 @@ const {
   onThreadInserted,
   onThreadUpdated,
   onThreadDeleted,
+  onPostInserted,
+  onPostUpdated,
+  onPostDeleted,
 } = require('./triggered_functions/firestore-triggered');
 const v1 = functions.https.onRequest(app);
 
@@ -23,4 +26,7 @@ module.exports = {
   onThreadInserted,
   onThreadUpdated,
   onThreadDeleted,
+  onPostInserted,
+  onPostUpdated,
+  onPostDeleted,
 };
